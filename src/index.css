@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #ef4444; /* Red 500 */
+  --color-brand-600: #dc2626; /* Red 600 */
+  --color-accent: #fb923c;    /* Orange Accent */
+  --color-bg-dark: #000000;
+  --color-bg-light: #f8f9fa;
+  --color-text-dark: #ffffff;
+  --color-text-light: #0f172a;
+  --font-mono: "Fira Code", "JetBrains Mono", monospace;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  
+  --animate-gradient: gradient 3s ease-in-out infinite alternate;
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+}
+
+:root {
+  /* 
+   * MANUALLY ADJUST BACKGROUND IMAGE SIZE HERE
+   * Try values like '50%', '800px', 'contain', 'cover', or 'auto'
+   */
+  --light-bg-size: 25%; 
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    background-image: url('/assets/White_vel.jpg');
+    background-repeat: no-repeat;
+    background-size: var(--light-bg-size);
+    background-position: center;
+    background-attachment: fixed;
+    @apply text-slate-900 transition-colors duration-500 font-sans tracking-tight;
+  }
+  
+  /* Hide default cursor on devices that support a fine pointer (mouse) */
+  @media (pointer: fine) {
+    *, *::before, *::after {
+      cursor: none !important;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  
+  .dark body {
+    background-color: #050505;
+    background-image: url('/assets/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: screen, screen, normal;
+    @apply text-slate-100;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-black/40 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+  
+  .glass-card {
+    @apply bg-white/50 dark:bg-white/5 backdrop-blur-lg border border-white/40 dark:border-white/10 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1;
+  }
+  
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-brand-500 via-accent to-brand-500 bg-[length:200%_auto] animate-gradient;
+  }
+}
+
+/* Typography styles */
+.font-coder {
+  font-family: var(--font-mono);
+}

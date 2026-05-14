@@ -1,6 +1,6 @@
 import React from 'react';
 import { Terminal } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,6 +31,9 @@ export default function Footer() {
             </a>
             <a href="https://www.linkedin.com/in/jeevananthan-a-420848266/" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
               <FaLinkedin size={18} />
+            </a>
+            <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
+              <FaInstagram size={18} />
             </a>
           </div>
           

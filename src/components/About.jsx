@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, Calendar, MapPin, Mail, Phone, User, Eye } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function About() {
   return (
@@ -54,6 +55,10 @@ export default function About() {
               <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <Calendar className="text-brand-500" size={20} />
                 <span><strong className="text-gray-900 dark:text-white">DOB:</strong> 27/03/2003</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                <FaInstagram className="text-brand-500" size={20} />
+                <span><strong className="text-gray-900 dark:text-white">Instagram:</strong> <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" target="_blank" rel="noreferrer" className="hover:text-brand-500 transition-colors">@jeevananthan_27</a></span>
               </div>
             </div>
 

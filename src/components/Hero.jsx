@@ -1,6 +1,6 @@
 import React from 'react';
 import { Download, Mail, Phone, ArrowRight } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
@@ -62,6 +62,9 @@ export default function Hero() {
               </a>
               <a href="https://www.linkedin.com/in/jeevananthan-a-420848266/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <FaLinkedin size={24} />
+              </a>
+              <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+                <FaInstagram size={24} />
               </a>
               <a href="mailto:jeevakowshick2127@gmail.com" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <Mail size={24} />

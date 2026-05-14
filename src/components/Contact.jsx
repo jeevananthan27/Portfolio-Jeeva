@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -70,6 +71,16 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Phone</h4>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">+91 6380303160</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-2xl glass flex items-center justify-center flex-shrink-0 text-brand-500 shadow-sm">
+                    <FaInstagram size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Instagram</h4>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed"><a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" target="_blank" rel="noreferrer" className="hover:text-brand-500 transition-colors">@jeevananthan_27</a></p>
                   </div>
                 </div>
               </div>

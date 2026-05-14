@@ -15,7 +15,7 @@ export default function Footer() {
           
           <div className="flex items-center gap-3 group">
             <img 
-              src="/assets/logo_JN.jpg" 
+              src="/assets/logo_JN.png" 
               alt="Logo" 
               className="w-12 h-12 object-contain rounded-xl shadow-lg group-hover:shadow-brand-500/30 transition-all duration-300" 
             />

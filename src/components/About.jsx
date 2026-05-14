@@ -8,7 +8,7 @@ export default function About() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tighter">
-            Discover <span className="text-gradient">About Me</span>
+            Get to know <span className="text-gradient">Me</span>
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-brand-500 to-accent mx-auto rounded-full"></div>
         </div>

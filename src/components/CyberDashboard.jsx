@@ -128,7 +128,7 @@ export default function CyberDashboard() {
     }
   };
 
-  const loadout = [
+  const WEAPONRY = [
     {
       category: "MOBILE",
       name: "CMF Phone 2 Pro",
@@ -283,12 +283,12 @@ export default function CyberDashboard() {
             </div>
           </div>
 
-          {/* RIGHT PANEL: LOADOUT */}
+          {/* RIGHT PANEL: WEAPONRY */}
           <div className="xl:col-span-5 flex flex-col border-l-0 xl:border-l border-[#1f1f1f] xl:pl-10 mt-12 xl:mt-0">
             <div className="mb-8 border-b border-[#1f1f1f] pb-4 flex justify-between items-end">
               <div>
-                <h2 className="text-3xl font-black text-white tracking-widest uppercase">LOADOUT</h2>
-                <p className="text-gray-600 text-[10px] tracking-widest mt-1">GRID_SYSTEM_V.9</p>
+                <h2 className="text-3xl font-black text-white tracking-widest uppercase">WEAPONRY</h2>
+                <p className="text-gray-600 text-[10px] tracking-widest mt-1">BAND_SYSTEM_V.23</p>
               </div>
               <div className="flex gap-1 mb-1">
                 <div className="w-1.5 h-1.5 bg-[#00ff00]"></div>
@@ -297,7 +297,7 @@ export default function CyberDashboard() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 flex-1">
-              {loadout.map((item, i) => (
+              {WEAPONRY.map((item, i) => (
                 <a 
                   key={i}
                   href={item.link}

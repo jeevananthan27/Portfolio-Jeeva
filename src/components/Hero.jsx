@@ -103,7 +103,7 @@ export default function Hero() {
               <div className="p-5 text-xs font-coder text-gray-700 dark:text-gray-300 leading-relaxed overflow-x-auto bg-white/5 dark:bg-black/10">
                 <p><span className="text-brand-600 dark:text-brand-400">const</span> <span className="text-accent">dev</span> = {'{'}</p>
                 <p className="ml-4"><span className="text-gray-900 dark:text-white">name</span>: <span className="text-emerald-600 dark:text-emerald-400">'Jeevananthan A'</span>,</p>
-                <p className="ml-4"><span className="text-gray-900 dark:text-white">role</span>: <span className="text-emerald-600 dark:text-emerald-400">'Frontend Developer'</span>,</p>
+                <p className="ml-4"><span className="text-gray-900 dark:text-white">role</span>: <span className="text-emerald-600 dark:text-emerald-400">'Program Analyst'</span>,</p>
                 <p className="ml-4"><span className="text-gray-900 dark:text-white">skills</span>: [<span className="text-emerald-600 dark:text-emerald-400">'React'</span>, <span className="text-emerald-600 dark:text-emerald-400">'Node'</span>, <span className="text-emerald-600 dark:text-emerald-400">'Java'</span>],</p>
                 <p>{'};'}</p>
               </div>

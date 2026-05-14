@@ -4,7 +4,7 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 export default function Experience() {
   const experiences = [
     {
-      role: 'Frontend Developer Intern',
+      role: 'Program Analyst',
       company: 'PSG HOSPITAL',
       location: 'Coimbatore',
       period: 'Aug-2025 - Present',

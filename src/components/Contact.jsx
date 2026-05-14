@@ -35,7 +35,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-8">
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="glass-card rounded-3xl p-10 h-full">

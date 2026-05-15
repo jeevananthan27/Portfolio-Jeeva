@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-jeev-s-e356e.web.app/sitemap.xml
+Sitemap: https://jeeva27dips.vercel.app/sitemap.xml

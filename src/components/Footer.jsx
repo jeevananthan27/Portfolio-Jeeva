@@ -43,7 +43,7 @@ export default function Footer() {
               <a 
                 key={i}
                 href={social.link} 
-                className="w-14 h-14 bg-white text-black flex items-center justify-center hover:bg-[#ff5722] hover:text-slate-900 dark:text-white transition-all transform hover:-translate-y-1 active:translate-y-0"
+                className="w-14 h-14 bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center hover:bg-[#ff5722] dark:hover:bg-[#ff5722] hover:text-white dark:hover:text-white transition-all transform hover:-translate-y-1 active:translate-y-0"
               >
                 {social.icon}
               </a>

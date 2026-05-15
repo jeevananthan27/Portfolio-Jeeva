@@ -6,41 +6,56 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-  className="py-12 border-t border-gray-200 dark:border-white/10 glass relative z-10"
-  style={{ position: "relative", zIndex: 9999 }}
->
+    <footer className="bg-black text-white border-t-8 border-white relative z-50 py-16 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           
-          <div className="flex items-center gap-3 group">
-            <img 
-              src="/assets/logo_JN.png" 
-              alt="Logo" 
-              className="w-12 h-12 object-contain rounded-xl shadow-lg group-hover:shadow-brand-500/30 transition-all duration-300" 
-            />
-            <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight hidden sm:block">
-              Jeevananthan<span className="text-brand-500">_A</span>
-            </span>
+          <div className="md:col-span-4">
+            <div className="flex items-center gap-4 mb-6">
+              <img 
+                src="/assets/logo_JN.png" 
+                alt="Logo" 
+                className="w-16 h-16 object-contain grayscale brightness-200 border-2 border-white p-1" 
+              />
+              <span className="text-4xl font-black tracking-tighter uppercase leading-none">
+                JEEVANANTHAN<br/><span className="text-[#ff5722]">_A</span>
+              </span>
+            </div>
+            <p className="text-gray-500 font-mono text-[10px] tracking-[0.4em] uppercase">
+              // ARCHITECTING_FUTURE_SYSTEMS
+            </p>
           </div>
 
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
-            © {currentYear} Jeevananthan A. All rights reserved.
-          </p>
+          <div className="md:col-span-4 flex flex-col items-center justify-center">
+            <div className="w-full h-[1px] bg-white/20 mb-6"></div>
+            <p className="text-white font-black text-xs tracking-widest uppercase">
+              © {currentYear} DATA_PROTOCOL. ALL_RIGHTS_RESERVED.
+            </p>
+            <div className="w-full h-[1px] bg-white/20 mt-6"></div>
+          </div>
 
-          <div className="flex items-center gap-4">
-            <a href="https://github.com/jeevananthan27" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
-              <FaGithub size={18} />
-            </a>
-            <a href="https://www.linkedin.com/in/jeevananthan-a-420848266/" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
-              <FaLinkedin size={18} />
-            </a>
-            <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-500 transition-colors">
-              <FaInstagram size={18} />
-            </a>
+          <div className="md:col-span-4 flex justify-end gap-2">
+            {[
+              { icon: <FaGithub size={20} />, link: "https://github.com/jeevananthan27" },
+              { icon: <FaLinkedin size={20} />, link: "https://www.linkedin.com/in/jeevananthan-a-420848266/" },
+              { icon: <FaInstagram size={20} />, link: "https://www.instagram.com/jeevananthan_27" }
+            ].map((social, i) => (
+              <a 
+                key={i}
+                href={social.link} 
+                className="w-14 h-14 bg-white text-black flex items-center justify-center hover:bg-[#ff5722] hover:text-white transition-all transform hover:-translate-y-1 active:translate-y-0"
+              >
+                {social.icon}
+              </a>
+            ))}
           </div>
           
         </div>
+      </div>
+      
+      {/* Brutalist Background Text */}
+      <div className="absolute -bottom-10 -right-10 text-[150px] font-black text-white/5 pointer-events-none select-none uppercase tracking-tighter">
+        FUTURISM
       </div>
     </footer>
   );

@@ -84,7 +84,7 @@ export default function CyberDashboard() {
       id: "PUSH",
       subtitle: "Chest, Shoulders,Forearms & Triceps Variation",
       focus: "Chest size, Shoulder width, Arm thickness",
-      color: "#ff5500",
+      color: "#00f3ff",
       exercises: [
         { name: "Bench Press", sets: "4", reps: "8" },
         { name: "Incline DB Press", sets: "3", reps: "10" },
@@ -101,7 +101,7 @@ export default function CyberDashboard() {
       id: "PULL",
       subtitle: "Back, Biceps Variation, Forearms",
       focus: "Wider back, Bigger biceps, Better posture",
-      color: "#0077ff",
+      color: "#0088ff",
       exercises: [
         { name: "Lat Pulldown", sets: "4", reps: "10" },
         { name: "Barbell Row", sets: "3", reps: "10" },
@@ -117,7 +117,7 @@ export default function CyberDashboard() {
       id: "LEGS",
       subtitle: "Lower Body Power",
       focus: "Overall strength, Balanced physique",
-      color: "#00ff00",
+      color: "#00ff66",
       exercises: [
         { name: "Squats", sets: "4", reps: "8" },
         { name: "Leg Press", sets: "3", reps: "10" },
@@ -176,11 +176,11 @@ export default function CyberDashboard() {
       return currentWorkout.color;
     }
 
-    return 'rgba(255, 255, 255, 0.1)';
+    return 'rgba(0, 243, 255, 0.05)';
   };
 
   return (
-    <section className="bg-[#050505] text-gray-300 font-mono py-24 border-t border-[#1a1a1a]">
+    <section className="hud-bg bg-[#020813] text-[#00f3ff] font-mono py-24 border-t border-[#00f3ff]/20 relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
           
@@ -192,8 +192,8 @@ export default function CyberDashboard() {
             <div className="flex justify-between items-end mb-6">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="bg-[#111] border border-[#333] text-gray-400 text-[10px] font-bold px-2 py-0.5 tracking-wider">TARGET</span>
-                  <span className="text-[#00ffcc] text-xs tracking-widest uppercase font-bold">{todayName}</span>
+                  <span className="hud-border bg-transparent text-[#00f3ff] text-[10px] font-bold px-2 py-0.5 tracking-widest hud-pulse">TARGET_LOCK</span>
+                  <span className="text-[#00ff66] text-xs tracking-widest uppercase font-bold">{todayName}</span>
                 </div>
                 <h2 className="text-5xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none" style={{ color: currentWorkout.color }}>
                   {currentWorkout.id}
@@ -210,22 +210,22 @@ export default function CyberDashboard() {
             </div>
 
             {/* Biometrics Panel */}
-            <div className="border border-[#1f1f1f] bg-[#0a0a0a] p-4 flex gap-6 text-xs font-bold text-gray-400 mb-8 overflow-x-auto whitespace-nowrap">
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px]">HEIGHT</span><span className="text-white text-sm">176 CM</span></div>
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px]">WEIGHT</span><span className="text-white text-sm">84 KG</span></div>
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px]">CALS_IN</span><span className="text-white text-sm">2600 KCAL</span></div>
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px] flex items-center gap-1"><Dumbbell size={10}/> PROTEIN</span><span className="text-[#00ff00] text-sm">170 G</span></div>
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px] flex items-center gap-1"><Droplet size={10}/> WATER</span><span className="text-[#00ffcc] text-sm">3.5 L</span></div>
-              <div className="flex flex-col"><span className="text-gray-600 text-[9px] flex items-center gap-1"><Flame size={10}/> BURN</span><span className="text-[#ff5500] text-sm">~550 KCAL</span></div>
+            <div className="hud-border p-4 flex flex-wrap gap-6 text-xs font-bold text-[#00f3ff]/70 mb-8">
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">HEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-white text-[10px]">176 CM</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">WEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-white text-[10px]">84 KG</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">CALS_IN</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div></div><span className="text-white text-[10px]">2600 KCAL</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Dumbbell size={10}/> PRT</span><span className="text-[#00ff66] text-sm">170 G</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Droplet size={10}/> H2O</span><span className="text-[#00f3ff] text-sm">3.5 L</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Flame size={10}/> BRN</span><span className="text-[#0088ff] text-sm">~550 K</span></div>
             </div>
 
             <div className="flex-1 flex flex-col md:flex-row gap-8">
               {/* Exercise List */}
               <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 content-start">
                 {currentWorkout.exercises.map((ex, i) => (
-                  <div key={i} className="border border-[#1f1f1f] bg-[#0a0a0a] p-4 relative group hover:border-[#444] transition-colors">
-                    <div className="absolute top-2 right-2 opacity-20"><ShieldAlert size={12} /></div>
-                    <span className="text-[#444] text-[10px] font-bold block mb-2">0{i+1}</span>
+                  <div key={i} className="hud-border p-4 relative group transition-colors">
+                    <div className="absolute top-2 right-2 text-[#00f3ff]/30 group-hover:hud-pulse"><Activity size={12} /></div>
+                    <span className="text-[#00f3ff]/40 text-[10px] font-bold block mb-2 tracking-widest">SEQ_0{i+1}</span>
                     <h3 className="text-white text-xs font-bold tracking-wider mb-4 leading-tight pr-4">{ex.name}</h3>
                     <div className="flex items-center gap-3">
                       <div className="flex items-center gap-1.5">
@@ -241,11 +241,12 @@ export default function CyberDashboard() {
               </div>
 
               {/* Body SVG / Status */}
-              <div className="w-full md:w-64 flex flex-col items-center justify-center border border-[#1f1f1f] bg-[#0a0a0a] p-4 relative min-h-[350px]">
-                <div className="absolute top-2 right-2 text-gray-700 text-[10px]">ID: 214360</div>
+              <div className="w-full md:w-64 flex flex-col items-center justify-center hud-border p-4 relative min-h-[350px] overflow-hidden">
+                <div className="hud-scanline"></div>
+                <div className="absolute top-2 right-2 text-[#00f3ff]/50 text-[10px] tracking-widest">ID: 214360</div>
                 
                 {/* Advanced Cybernetic Body Vector mapped dynamically */}
-                <svg className="rbh w-48 h-auto opacity-80 mt-4 mb-4" viewBox="0 0 100 200" stroke="#111" strokeWidth="0.5">
+                <svg className="rbh w-48 h-auto opacity-80 mt-4 mb-4 drop-shadow-[0_0_8px_rgba(0,243,255,0.5)]" viewBox="0 0 100 200" stroke="#00f3ff" strokeWidth="0.3">
                   {bodyPolygons.map((points, idx) => (
                     <polygon 
                       key={idx} 
@@ -255,8 +256,8 @@ export default function CyberDashboard() {
                   ))}
                 </svg>
 
-                <div className="w-full flex justify-between text-[8px] text-gray-500 mt-auto border-t border-[#1f1f1f] pt-2">
-                  <span>SYNC_ID: L4FMK6MAB</span>
+                <div className="w-full flex justify-between text-[8px] text-[#00f3ff]/50 mt-auto border-t border-[#00f3ff]/20 pt-2 tracking-widest">
+                  <span className="hud-pulse">SYNC_ID: L4FMK6MAB</span>
                   <span>LATENCY: 12ms</span>
                 </div>
               </div>
@@ -264,35 +265,36 @@ export default function CyberDashboard() {
 
             {/* Bottom Mini Metrics (Retained as requested) */}
             <div className="flex gap-4 mt-4">
-              <div className="border border-[#1f1f1f] bg-[#0a0a0a] p-3 flex-1 flex flex-col justify-between">
-                <span className="text-gray-500 text-[10px]">SYS_LOAD</span>
-                <span className="text-white text-xl font-bold">100%</span>
+              <div className="hud-border p-3 flex-1 flex flex-col justify-between">
+                <span className="text-[#00f3ff]/50 text-[10px] tracking-widest">SYS_LOAD</span>
+                <span className="text-white text-xl font-bold tracking-widest">100%</span>
               </div>
-              <div className="border border-[#1f1f1f] bg-[#0a0a0a] p-3 flex-1 flex flex-col justify-between">
-                <span className="text-gray-500 text-[10px]">INTENSITY</span>
-                <span className="text-white text-xl font-bold">HIGH</span>
+              <div className="hud-border p-3 flex-1 flex flex-col justify-between">
+                <span className="text-[#00f3ff]/50 text-[10px] tracking-widest">INTENSITY</span>
+                <span className="text-white text-xl font-bold tracking-widest">HIGH</span>
               </div>
-              <div className="border border-[#1f1f1f] bg-[#0a0a0a] p-3 flex-1 flex items-end gap-1">
-                <div className="w-2 h-4 bg-[#00ff00]/20"></div>
-                <div className="w-2 h-6 bg-[#00ff00]/40"></div>
-                <div className="w-2 h-3 bg-[#00ff00]/20"></div>
-                <div className="w-2 h-8 bg-[#00ff00]"></div>
-                <div className="w-2 h-5 bg-[#00ff00]/60"></div>
-                <div className="w-2 h-7 bg-[#00ff00]"></div>
+              <div className="hud-border p-3 flex-1 flex items-end justify-center gap-1">
+                <div className="w-2 h-4 bg-[#00f3ff]/20"></div>
+                <div className="w-2 h-6 bg-[#00f3ff]/40"></div>
+                <div className="w-2 h-3 bg-[#00f3ff]/20"></div>
+                <div className="w-2 h-8 bg-[#00f3ff] hud-pulse"></div>
+                <div className="w-2 h-5 bg-[#00f3ff]/60"></div>
+                <div className="w-2 h-7 bg-[#00f3ff]"></div>
               </div>
             </div>
           </div>
 
           {/* RIGHT PANEL: WEAPONRY */}
-          <div className="xl:col-span-5 flex flex-col border-l-0 xl:border-l border-[#1f1f1f] xl:pl-10 mt-12 xl:mt-0">
-            <div className="mb-8 border-b border-[#1f1f1f] pb-4 flex justify-between items-end">
+          <div className="xl:col-span-5 flex flex-col border-l-0 xl:border-l border-[#00f3ff]/20 xl:pl-10 mt-12 xl:mt-0 relative">
+            <div className="absolute top-0 -left-[1px] w-[2px] h-32 bg-gradient-to-b from-[#00f3ff] to-transparent"></div>
+            <div className="mb-8 border-b border-[#00f3ff]/20 pb-4 flex justify-between items-end">
               <div>
-                <h2 className="text-3xl font-black text-white tracking-widest uppercase">WEAPONRY</h2>
-                <p className="text-gray-600 text-[10px] tracking-widest mt-1">BAND_SYSTEM_V.23</p>
+                <h2 className="text-3xl font-black text-white tracking-widest uppercase">Weaponry_Gear</h2>
+                <p className="text-[#00f3ff]/60 text-[10px] tracking-widest mt-1">MODULE_V.23 <span className="hud-pulse inline-block w-2 h-2 rounded-full bg-[#00ff66] ml-2"></span></p>
               </div>
               <div className="flex gap-1 mb-1">
-                <div className="w-1.5 h-1.5 bg-[#00ff00]"></div>
-                <div className="w-1.5 h-1.5 bg-gray-700"></div>
+                <div className="w-1.5 h-1.5 bg-[#00f3ff]"></div>
+                <div className="w-1.5 h-1.5 bg-[#00f3ff]/30"></div>
               </div>
             </div>
 
@@ -303,16 +305,19 @@ export default function CyberDashboard() {
                   href={item.link}
                   target={item.link !== "#" ? "_blank" : "_self"}
                   rel="noreferrer"
-                  className="border border-[#1f1f1f] bg-[#0a0a0a] p-5 flex flex-col justify-between hover:border-gray-500 transition-colors group cursor-pointer relative overflow-hidden min-h-[160px]"
+                  className="hud-border p-5 flex flex-col justify-between group cursor-pointer relative overflow-hidden min-h-[160px]"
                 >
-                  <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-[#ffffff05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-                  <span className="text-gray-600 text-[9px] font-bold tracking-widest mb-4 block">{item.category}</span>
-                  <div className="flex-1 flex items-center justify-center opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
-                    {item.icon}
+                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMiIgZmlsbD0icmdiYSgwLCAyNDMsIDI1NSwgMC4xKSIvPjwvc3ZnPg==')] opacity-30 pointer-events-none"></div>
+                  <div className="flex justify-between items-start mb-4">
+                    <span className="text-[#00f3ff]/60 text-[9px] font-bold tracking-widest block">{item.category}</span>
+                    <span className="text-[#00ff66] text-[8px] opacity-0 group-hover:opacity-100 hud-pulse transition-opacity">LOCK_ON</span>
                   </div>
-                  <div className="mt-4">
+                  <div className="flex-1 flex items-center justify-center text-[#00f3ff]/80 group-hover:text-white group-hover:scale-110 transition-all duration-300 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]">
+                    {React.cloneElement(item.icon, { className: "" })}
+                  </div>
+                  <div className="mt-4 relative z-10">
                     <h4 className="text-white text-xs font-bold tracking-wider mb-1 uppercase">{item.name}</h4>
-                    <p className="text-gray-500 text-[9px] uppercase tracking-wider">{item.subtext}</p>
+                    <p className="text-[#00f3ff]/50 text-[9px] uppercase tracking-wider">{item.subtext}</p>
                   </div>
                 </a>
               ))}

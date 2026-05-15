@@ -44,7 +44,7 @@ export default function ThemeAudioPlayer() {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex items-center gap-3 glass p-3 rounded-full shadow-lg border border-white/10 transition-all hover:scale-105 group">
+    <div className="fixed bottom-6 left-6 z-50 flex items-center gap-3 glass p-3 rounded-full shadow-lg border border-slate-900/10 dark:border-white/10 transition-all hover:scale-105 group">
       <div className="w-10 h-10 rounded-full bg-brand-500/20 flex items-center justify-center text-brand-500 relative overflow-hidden">
         {isPlaying && (
           <div className="absolute inset-0 bg-brand-500/20 animate-pulse rounded-full"></div>
@@ -56,14 +56,14 @@ export default function ThemeAudioPlayer() {
         <span className="text-xs font-semibold text-gray-900 dark:text-white uppercase tracking-wider">
           {isDarkMode ? "Dark Theme" : "Light Theme"}
         </span>
-        <span className="text-[10px] text-gray-500 dark:text-gray-400">
+        <span className="text-[10px] text-slate-500 dark:text-slate-600 dark:text-gray-400">
           {isPlaying ? "Playing..." : "Paused"}
         </span>
       </div>
 
       <button 
         onClick={togglePlay}
-        className="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center hover:bg-brand-600 transition-colors shadow-md ml-1"
+        className="w-10 h-10 rounded-full bg-brand-500 text-slate-900 dark:text-white flex items-center justify-center hover:bg-brand-600 transition-colors shadow-md ml-1"
         aria-label={isPlaying ? "Pause music" : "Play music"}
       >
         {isPlaying ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" className="ml-0.5" />}

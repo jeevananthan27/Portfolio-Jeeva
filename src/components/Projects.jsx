@@ -64,7 +64,7 @@ export default function Projects() {
             <span className="hud-border bg-transparent text-[#00f3ff] text-[10px] font-bold px-3 py-1 tracking-widest hud-pulse">DEPLOYMENT_LOG</span>
             <div className="w-12 h-[1px] bg-[#00f3ff]/30"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-widest uppercase">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-widest uppercase">
             PROJECT_ARCHIVE
           </h2>
           <div className="flex justify-center gap-2">
@@ -84,13 +84,13 @@ export default function Projects() {
               
               {/* Project Image Preview */}
               <div className="w-full h-48 overflow-hidden relative">
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors z-10"></div>
+                <div className="absolute inset-0 bg-slate-200/40 dark:bg-black/40 group-hover:bg-transparent transition-colors z-10"></div>
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover grayscale brightness-50 contrast-125 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700"
                 />
-                <div className="absolute top-2 right-2 z-20 text-[8px] font-bold text-[#00ff66] bg-black/80 px-1 border border-[#00ff66]/50 opacity-0 group-hover:opacity-100 hud-pulse">TARGET_LOCKED</div>
+                <div className="absolute top-2 right-2 z-20 text-[8px] font-bold text-[#00ff66] bg-slate-200/80 dark:bg-black/80 px-1 border border-[#00ff66]/50 opacity-0 group-hover:opacity-100 hud-pulse">TARGET_LOCKED</div>
               </div>
 
               <div className="p-6 flex flex-col flex-1 relative z-20">
@@ -108,7 +108,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-3 tracking-widest uppercase group-hover:text-[#00ff66] transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 tracking-widest uppercase group-hover:text-[#00ff66] transition-colors">
                   {project.title}
                 </h3>
                 
@@ -161,7 +161,7 @@ export default function Projects() {
                 className="w-full h-full object-cover grayscale brightness-75 contrast-125"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#020813] to-transparent"></div>
-              <div className="absolute top-4 left-4 text-[10px] font-bold text-[#00f3ff]/60 bg-black/80 px-2 py-1 border border-[#00f3ff]/20 tracking-widest uppercase">
+              <div className="absolute top-4 left-4 text-[10px] font-bold text-[#00f3ff]/60 bg-slate-200/80 dark:bg-black/80 px-2 py-1 border border-[#00f3ff]/20 tracking-widest uppercase">
                 ENCRYPTED_MEDIA_STREAM
               </div>
             </div>
@@ -172,7 +172,7 @@ export default function Projects() {
                 <div className="w-10 h-[1px] bg-[#00ff66]"></div>
                 <span className="text-[#00ff66] text-[10px] font-bold tracking-widest uppercase">FILE_METADATA</span>
               </div>
-              <h3 className="text-3xl sm:text-4xl font-black text-white mb-6 tracking-widest uppercase">
+              <h3 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white mb-6 tracking-widest uppercase">
                 {selectedProject.title}
               </h3>
               
@@ -207,10 +207,10 @@ export default function Projects() {
                 </div>
 
                 <div className="pt-8 border-t border-[#00f3ff]/10 flex flex-wrap gap-4">
-                  <a href="https://github.com/jeevananthan27" className="hud-border px-6 py-3 text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all flex items-center gap-2">
+                  <a href="https://github.com/jeevananthan27" className="hud-border px-6 py-3 text-slate-900 dark:text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all flex items-center gap-2">
                     <ExternalLink size={16} className="text-[#00ff66]" /> LIVE_PREVIEW
                   </a>
-                  <a href="https://github.com/jeevananthan27" className="hud-border px-6 py-3 text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all flex items-center gap-2">
+                  <a href="https://github.com/jeevananthan27" className="hud-border px-6 py-3 text-slate-900 dark:text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all flex items-center gap-2">
                     <FaGithub size={16} className="text-[#00f3ff]" /> SOURCE_CODE
                   </a>
                 </div>

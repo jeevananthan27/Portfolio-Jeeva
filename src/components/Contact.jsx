@@ -23,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-transparent backdrop-blur-xl text-white py-24 relative overflow-hidden font-mono border-y border-white/20">
+    <section id="contact" className="bg-transparent backdrop-blur-xl text-slate-900 dark:text-white py-24 relative overflow-hidden font-mono border-y border-slate-900/20 dark:border-white/20">
       {/* Techwear Hazard Tape Background Overlay */}
       <div className="absolute top-0 left-0 w-full h-2 bg-[repeating-linear-gradient(45deg,#facc15,#facc15_10px,#000_10px,#000_20px)] opacity-50 z-0"></div>
       <div className="absolute bottom-0 left-0 w-full h-2 bg-[repeating-linear-gradient(-45deg,#facc15,#facc15_10px,#000_10px,#000_20px)] opacity-50 z-0"></div>
@@ -34,13 +34,13 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 border-b-2 border-white/20 pb-4">
+        <div className="flex flex-col md:flex-row items-end justify-between mb-16 border-b-2 border-slate-900/20 dark:border-white/20 pb-4">
           <div>
             <div className="flex items-center gap-4 mb-2">
               <span className="bg-yellow-400 text-black px-2 py-0.5 text-xs font-black uppercase tracking-widest">
                 REQ_COMM
               </span>
-              <span className="text-white/50 text-xs font-bold tracking-[0.2em]">
+              <span className="text-slate-900/50 dark:text-white/50 text-xs font-bold tracking-[0.2em]">
                 // SECURE_CHANNEL
               </span>
             </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                 <span className="text-black text-[10px] font-black uppercase">DATA_NODE</span>
               </div>
               
-              <div className="h-full bg-black/60 border border-white/20 p-8 pt-12 relative overflow-hidden backdrop-blur-md">
+              <div className="h-full bg-slate-200/60 dark:bg-black/60 border border-slate-900/20 dark:border-white/20 p-8 pt-12 relative overflow-hidden backdrop-blur-md">
                 {/* Corner Brackets */}
                 <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-yellow-400"></div>
                 <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-yellow-400"></div>
@@ -79,15 +79,15 @@ export default function Contact() {
                     { icon: <FaInstagram size={20} />, label: "SOCIAL_FEED", val: "@jeevananthan_27", link: "https://www.instagram.com/jeevananthan_27", spec: "EXT_LINK" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4">
-                      <div className="w-10 h-10 bg-white/5 border border-white/20 flex items-center justify-center text-white/70">
+                      <div className="w-10 h-10 bg-white/5 border border-slate-900/20 dark:border-white/20 flex items-center justify-center text-slate-900/70 dark:text-white/70">
                         {item.icon}
                       </div>
-                      <div className="flex-1 border-b border-white/10 pb-2">
+                      <div className="flex-1 border-b border-slate-900/10 dark:border-white/10 pb-2">
                         <div className="flex justify-between items-end mb-1">
                           <span className="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">{item.label}</span>
-                          <span className="text-[8px] text-white/30 uppercase tracking-widest">{item.spec}</span>
+                          <span className="text-[8px] text-slate-900/30 dark:text-white/30 uppercase tracking-widest">{item.spec}</span>
                         </div>
-                        <p className="text-sm font-bold text-white">
+                        <p className="text-sm font-bold text-slate-900 dark:text-white">
                           {item.link ? (
                             <a href={item.link} target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors">
                               {item.val}
@@ -101,7 +101,7 @@ export default function Contact() {
 
                 {/* Tactical Footer */}
                 <div className="mt-12 bg-white/5 p-4 border-l-2 border-yellow-400 flex justify-between items-center">
-                  <div className="text-[10px] text-white/50 leading-tight">
+                  <div className="text-[10px] text-slate-900/50 dark:text-white/50 leading-tight">
                     WARNING: ALL TRANSMISSIONS LOGGED.<br/>
                     UNAUTHORIZED ACCESS PROHIBITED.
                   </div>
@@ -122,53 +122,53 @@ export default function Contact() {
                 <span className="text-black text-[10px] font-black uppercase">INPUT_MATRIX</span>
               </div>
 
-              <div className="h-full bg-black/60 border border-white/20 p-8 pt-12 backdrop-blur-md">
+              <div className="h-full bg-slate-200/60 dark:bg-black/60 border border-slate-900/20 dark:border-white/20 p-8 pt-12 backdrop-blur-md">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-[10px] text-white/50 uppercase tracking-widest flex justify-between">
+                      <label htmlFor="name" className="text-[10px] text-slate-900/50 dark:text-white/50 uppercase tracking-widest flex justify-between">
                         <span>[01] ID_TAG</span>
                         <span className="text-yellow-400">*</span>
                       </label>
                       <input 
                         type="text" id="name" name="name" value={formData.name} onChange={handleChange} required
-                        className="w-full bg-white/5 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
+                        className="w-full bg-white/5 border border-slate-900/20 dark:border-white/20 px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
                         placeholder="ENTER IDENTIFIER"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-[10px] text-white/50 uppercase tracking-widest flex justify-between">
+                      <label htmlFor="email" className="text-[10px] text-slate-900/50 dark:text-white/50 uppercase tracking-widest flex justify-between">
                         <span>[02] NET_ADDRESS</span>
                         <span className="text-yellow-400">*</span>
                       </label>
                       <input 
                         type="email" id="email" name="email" value={formData.email} onChange={handleChange} required
-                        className="w-full bg-white/5 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
+                        className="w-full bg-white/5 border border-slate-900/20 dark:border-white/20 px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
                         placeholder="USER@HOST.NODE"
                       />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-[10px] text-white/50 uppercase tracking-widest flex justify-between">
+                    <label htmlFor="subject" className="text-[10px] text-slate-900/50 dark:text-white/50 uppercase tracking-widest flex justify-between">
                       <span>[03] TRANSMISSION_HEADER</span>
                       <span className="text-yellow-400">*</span>
                     </label>
                     <input 
                       type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required
-                      className="w-full bg-white/5 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
+                      className="w-full bg-white/5 border border-slate-900/20 dark:border-white/20 px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm"
                       placeholder="CLASSIFICATION / SUBJECT"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-[10px] text-white/50 uppercase tracking-widest flex justify-between">
+                    <label htmlFor="message" className="text-[10px] text-slate-900/50 dark:text-white/50 uppercase tracking-widest flex justify-between">
                       <span>[04] PAYLOAD_DATA</span>
                       <span className="text-yellow-400">*</span>
                     </label>
                     <textarea 
                       id="message" name="message" value={formData.message} onChange={handleChange} required rows="5"
-                      className="w-full bg-white/5 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm resize-none"
+                      className="w-full bg-white/5 border border-slate-900/20 dark:border-white/20 px-4 py-3 text-slate-900 dark:text-white focus:outline-none focus:border-yellow-400 focus:bg-yellow-400/5 transition-all text-sm resize-none"
                       placeholder="INITIALIZE DATA STREAM..."
                     ></textarea>
                   </div>

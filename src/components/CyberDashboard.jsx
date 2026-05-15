@@ -133,28 +133,28 @@ export default function CyberDashboard() {
       category: "MOBILE",
       name: "CMF Phone 2 Pro",
       subtext: "Nothing OS / 8+128GB",
-      icon: <Smartphone size={24} className="text-gray-400 mb-4 group-hover:text-white transition-colors" />,
+      icon: <Smartphone size={24} className="text-slate-600 dark:text-gray-400 mb-4 group-hover:text-slate-900 dark:text-white transition-colors" />,
       link: "https://in.nothing.tech/products/cmf-phone-2-pro?Colour=White&Capacity=8%2B128GB"
     },
     {
       category: "AUDIO",
       name: "Zebronics Duke Plus",
       subtext: "Wireless Headphones",
-      icon: <Headphones size={24} className="text-gray-400 mb-4 group-hover:text-white transition-colors" />,
+      icon: <Headphones size={24} className="text-slate-600 dark:text-gray-400 mb-4 group-hover:text-slate-900 dark:text-white transition-colors" />,
       link: "https://zebronics.com/products/zeb-duke-plus"
     },
     {
       category: "COMPUTE",
       name: "HP Victus 12th Gen",
       subtext: "Gaming Laptop",
-      icon: <Laptop size={24} className="text-gray-400 mb-4 group-hover:text-white transition-colors" />,
+      icon: <Laptop size={24} className="text-slate-600 dark:text-gray-400 mb-4 group-hover:text-slate-900 dark:text-white transition-colors" />,
       link: "#"
     },
     {
       category: "OPTICS",
       name: "Sony HDR-CX405",
       subtext: "HD Handycam",
-      icon: <Camera size={24} className="text-gray-400 mb-4 group-hover:text-white transition-colors" />,
+      icon: <Camera size={24} className="text-slate-600 dark:text-gray-400 mb-4 group-hover:text-slate-900 dark:text-white transition-colors" />,
       link: "#"
     }
   ];
@@ -195,10 +195,10 @@ export default function CyberDashboard() {
                   <span className="hud-border bg-transparent text-[#00f3ff] text-[10px] font-bold px-2 py-0.5 tracking-widest hud-pulse">TARGET_LOCK</span>
                   <span className="text-[#00ff66] text-xs tracking-widest uppercase font-bold">{todayName}</span>
                 </div>
-                <h2 className="text-5xl md:text-6xl font-black text-white tracking-tighter uppercase leading-none" style={{ color: currentWorkout.color }}>
+                <h2 className="text-5xl md:text-6xl font-black text-slate-900 dark:text-white tracking-tighter uppercase leading-none" style={{ color: currentWorkout.color }}>
                   {currentWorkout.id}
                 </h2>
-                <p className="text-gray-500 text-sm mt-2 flex items-center gap-2">
+                <p className="text-slate-500 dark:text-gray-500 text-sm mt-2 flex items-center gap-2">
                   <span className="w-2 h-3 inline-block" style={{ backgroundColor: currentWorkout.color }}></span>
                   {currentWorkout.subtitle}
                 </p>
@@ -211,9 +211,9 @@ export default function CyberDashboard() {
 
             {/* Biometrics Panel */}
             <div className="hud-border p-4 flex flex-wrap gap-6 text-xs font-bold text-[#00f3ff]/70 mb-8">
-              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">HEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-white text-[10px]">176 CM</span></div>
-              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">WEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-white text-[10px]">84 KG</span></div>
-              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">CALS_IN</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div></div><span className="text-white text-[10px]">2600 KCAL</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">HEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-slate-900 dark:text-white text-[10px]">176 CM</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">WEIGHT</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00f3ff]"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div><div className="w-4 h-1.5 bg-[#00f3ff]/20"></div></div><span className="text-slate-900 dark:text-white text-[10px]">84 KG</span></div>
+              <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest">CALS_IN</span><div className="flex gap-1"><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div><div className="w-4 h-1.5 bg-[#00ff66]"></div></div><span className="text-slate-900 dark:text-white text-[10px]">2600 KCAL</span></div>
               <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Dumbbell size={10}/> PRT</span><span className="text-[#00ff66] text-sm">170 G</span></div>
               <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Droplet size={10}/> H2O</span><span className="text-[#00f3ff] text-sm">3.5 L</span></div>
               <div className="flex flex-col gap-1"><span className="text-[9px] tracking-widest flex items-center gap-1"><Flame size={10}/> BRN</span><span className="text-[#0088ff] text-sm">~550 K</span></div>
@@ -226,14 +226,14 @@ export default function CyberDashboard() {
                   <div key={i} className="hud-border p-4 relative group transition-colors">
                     <div className="absolute top-2 right-2 text-[#00f3ff]/30 group-hover:hud-pulse"><Activity size={12} /></div>
                     <span className="text-[#00f3ff]/40 text-[10px] font-bold block mb-2 tracking-widest">SEQ_0{i+1}</span>
-                    <h3 className="text-white text-xs font-bold tracking-wider mb-4 leading-tight pr-4">{ex.name}</h3>
+                    <h3 className="text-slate-900 dark:text-white text-xs font-bold tracking-wider mb-4 leading-tight pr-4">{ex.name}</h3>
                     <div className="flex items-center gap-3">
                       <div className="flex items-center gap-1.5">
                         <div className="w-1 h-3" style={{ backgroundColor: currentWorkout.color }}></div>
-                        <span className="text-gray-500 text-[10px] font-bold">{ex.sets} SETS</span>
+                        <span className="text-slate-500 dark:text-gray-500 text-[10px] font-bold">{ex.sets} SETS</span>
                       </div>
                       <div className="flex items-center gap-1.5">
-                        <span className="text-gray-500 text-[10px] font-bold">{ex.reps} REPS</span>
+                        <span className="text-slate-500 dark:text-gray-500 text-[10px] font-bold">{ex.reps} REPS</span>
                       </div>
                     </div>
                   </div>
@@ -267,11 +267,11 @@ export default function CyberDashboard() {
             <div className="flex gap-4 mt-4">
               <div className="hud-border p-3 flex-1 flex flex-col justify-between">
                 <span className="text-[#00f3ff]/50 text-[10px] tracking-widest">SYS_LOAD</span>
-                <span className="text-white text-xl font-bold tracking-widest">100%</span>
+                <span className="text-slate-900 dark:text-white text-xl font-bold tracking-widest">100%</span>
               </div>
               <div className="hud-border p-3 flex-1 flex flex-col justify-between">
                 <span className="text-[#00f3ff]/50 text-[10px] tracking-widest">INTENSITY</span>
-                <span className="text-white text-xl font-bold tracking-widest">HIGH</span>
+                <span className="text-slate-900 dark:text-white text-xl font-bold tracking-widest">HIGH</span>
               </div>
               <div className="hud-border p-3 flex-1 flex items-end justify-center gap-1">
                 <div className="w-2 h-4 bg-[#00f3ff]/20"></div>
@@ -289,7 +289,7 @@ export default function CyberDashboard() {
             <div className="absolute top-0 -left-[1px] w-[2px] h-32 bg-gradient-to-b from-[#00f3ff] to-transparent"></div>
             <div className="mb-8 border-b border-[#00f3ff]/20 pb-4 flex justify-between items-end">
               <div>
-                <h2 className="text-3xl font-black text-white tracking-widest uppercase">Weaponry_Gear</h2>
+                <h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-widest uppercase">Weaponry_Gear</h2>
                 <p className="text-[#00f3ff]/60 text-[10px] tracking-widest mt-1">MODULE_V.23 <span className="hud-pulse inline-block w-2 h-2 rounded-full bg-[#00ff66] ml-2"></span></p>
               </div>
               <div className="flex gap-1 mb-1">
@@ -312,11 +312,11 @@ export default function CyberDashboard() {
                     <span className="text-[#00f3ff]/60 text-[9px] font-bold tracking-widest block">{item.category}</span>
                     <span className="text-[#00ff66] text-[8px] opacity-0 group-hover:opacity-100 hud-pulse transition-opacity">LOCK_ON</span>
                   </div>
-                  <div className="flex-1 flex items-center justify-center text-[#00f3ff]/80 group-hover:text-white group-hover:scale-110 transition-all duration-300 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]">
+                  <div className="flex-1 flex items-center justify-center text-[#00f3ff]/80 group-hover:text-slate-900 dark:text-white group-hover:scale-110 transition-all duration-300 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]">
                     {React.cloneElement(item.icon, { className: "" })}
                   </div>
                   <div className="mt-4 relative z-10">
-                    <h4 className="text-white text-xs font-bold tracking-wider mb-1 uppercase">{item.name}</h4>
+                    <h4 className="text-slate-900 dark:text-white text-xs font-bold tracking-wider mb-1 uppercase">{item.name}</h4>
                     <p className="text-[#00f3ff]/50 text-[9px] uppercase tracking-wider">{item.subtext}</p>
                   </div>
                 </a>

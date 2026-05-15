@@ -38,7 +38,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="bg-transparent backdrop-blur-md text-white py-24 relative overflow-hidden">
+    <section id="experience" className="bg-transparent backdrop-blur-md text-slate-900 dark:text-white py-24 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10">
         <div className="absolute top-[20%] right-[10%] w-[50%] h-[50%] bg-pink-600/20 blur-[150px] rounded-full"></div>
         <div className="absolute bottom-[20%] left-[10%] w-[50%] h-[50%] bg-blue-600/20 blur-[150px] rounded-full"></div>
@@ -46,11 +46,11 @@ export default function Experience() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-widest uppercase italic">
+          <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-4 tracking-widest uppercase italic">
             CAREER_<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 animate-pulse">PATH</span>
           </h2>
           <div className="w-48 h-[2px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent mx-auto"></div>
-          <p className="mt-6 text-gray-500 max-w-2xl mx-auto font-mono text-sm tracking-[0.3em] uppercase">
+          <p className="mt-6 text-slate-500 dark:text-gray-500 max-w-2xl mx-auto font-mono text-sm tracking-[0.3em] uppercase">
             // Professional Vector Log
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function Experience() {
                 
                 {/* Content Card */}
                 <div className="w-[calc(100%-5rem)] md:w-[calc(50%-4rem)] ml-16 md:ml-0 relative">
-                  <div className="bg-black/60 backdrop-blur-md border border-white/10 p-8 rounded-2xl transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)] group-hover:-translate-y-2 overflow-hidden">
+                  <div className="bg-slate-200/60 dark:bg-black/60 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-2xl transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)] group-hover:-translate-y-2 overflow-hidden">
                     {/* Retro background texture */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:20px_20px] opacity-20"></div>
                     
@@ -79,20 +79,20 @@ export default function Experience() {
                         <span className="text-[10px] font-bold text-cyan-400 tracking-widest uppercase py-1 px-3 border border-cyan-400/30 bg-cyan-400/5">
                           {exp.period}
                         </span>
-                        <div className="text-white/20 text-[8px] font-mono tracking-tighter">TIMESTAMP_LOG: {1024 + index}</div>
+                        <div className="text-slate-900/20 dark:text-white/20 text-[8px] font-mono tracking-tighter">TIMESTAMP_LOG: {1024 + index}</div>
                       </div>
 
-                      <h3 className="text-2xl font-black text-white tracking-widest uppercase mb-2 group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-2xl font-black text-slate-900 dark:text-white tracking-widest uppercase mb-2 group-hover:text-cyan-400 transition-colors">
                         {exp.role}
                       </h3>
                       
-                      <div className="flex items-center gap-3 text-gray-400 text-xs font-bold tracking-widest uppercase mb-6">
+                      <div className="flex items-center gap-3 text-slate-600 dark:text-gray-400 text-xs font-bold tracking-widest uppercase mb-6">
                         <span className="text-pink-500">@</span> {exp.company}
                         <span className="w-1 h-1 bg-white/20 rounded-full"></span>
                         <span className="flex items-center gap-1"><MapPin size={12} className="text-blue-500" /> {exp.location}</span>
                       </div>
 
-                      <p className="text-gray-400 text-sm leading-relaxed font-mono mb-8 border-l border-white/10 pl-4">
+                      <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed font-mono mb-8 border-l border-slate-900/10 dark:border-white/10 pl-4">
                         {exp.description}
                       </p>
 
@@ -100,7 +100,7 @@ export default function Experience() {
                         {exp.technologies.map((tech, i) => (
                           <span 
                             key={i}
-                            className="px-3 py-1 text-[9px] font-bold text-white/60 border border-white/10 hover:border-cyan-500/50 hover:text-cyan-400 transition-all uppercase tracking-tighter bg-white/5"
+                            className="px-3 py-1 text-[9px] font-bold text-slate-900/60 dark:text-white/60 border border-slate-900/10 dark:border-white/10 hover:border-cyan-500/50 hover:text-cyan-400 transition-all uppercase tracking-tighter bg-white/5"
                           >
                             {tech}
                           </span>

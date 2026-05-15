@@ -13,7 +13,7 @@ export default function About() {
             <span className="hud-border bg-transparent text-[#00f3ff] text-[10px] font-bold px-3 py-1 tracking-widest hud-pulse">ID_RECOGNITION</span>
             <div className="w-12 h-[1px] bg-[#00f3ff]/30"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-widest uppercase">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-widest uppercase">
             SUBJECT_BIODATA
           </h2>
           <div className="flex justify-center gap-2">
@@ -27,10 +27,10 @@ export default function About() {
           <div className="space-y-8">
             <div className="flex flex-col sm:flex-row items-start gap-10">
               <div className="flex-1 order-2 sm:order-1">
-                <h3 className="text-2xl font-bold text-white tracking-widest mb-4 flex items-center gap-2 uppercase">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white tracking-widest mb-4 flex items-center gap-2 uppercase">
                   <span className="text-[#00ff66]">{">"}</span> INTRO_STRING
                 </h3>
-                <p className="text-sm text-[#00f3ff]/70 leading-relaxed font-mono tracking-tight bg-black/20 p-4 border-l-2 border-[#00ff66]">
+                <p className="text-sm text-[#00f3ff]/70 leading-relaxed font-mono tracking-tight bg-slate-200/20 dark:bg-black/20 p-4 border-l-2 border-[#00ff66]">
                   I am an inquisitive and sincere individual, dedicated to utilizing technical expertise to drive innovation. Driven computer science engineer focused on impactful contributions and system architecture.
                 </p>
               </div>
@@ -42,7 +42,7 @@ export default function About() {
                   alt="Jeevananthan A" 
                   className="w-full h-full object-cover grayscale brightness-75 contrast-125 group-hover:grayscale-0 transition-all duration-500 relative z-10 p-2"
                 />
-                <div className="absolute -bottom-2 -right-2 text-[8px] font-bold text-[#00ff66] bg-black/80 px-1 hud-pulse">FACIAL_RECOG_STABLE</div>
+                <div className="absolute -bottom-2 -right-2 text-[8px] font-bold text-[#00ff66] bg-slate-200/80 dark:bg-black/80 px-1 hud-pulse">FACIAL_RECOG_STABLE</div>
               </div>
             </div>
             
@@ -59,7 +59,7 @@ export default function About() {
                   <div className="text-[#00ff66] group-hover:hud-pulse">{item.icon}</div>
                   <div className="text-[10px] tracking-tighter">
                     <span className="text-[#00f3ff]/40 font-bold mr-2">{item.label}:</span>
-                    <span className="text-white font-bold group-hover:text-[#00f3ff] transition-colors">{item.val}</span>
+                    <span className="text-slate-900 dark:text-white font-bold group-hover:text-[#00f3ff] transition-colors">{item.val}</span>
                   </div>
                 </div>
               ))}
@@ -69,7 +69,7 @@ export default function About() {
               <a 
                 href="/assets/JEEVANANTHAN A_RESUME (1).pdf" 
                 download 
-                className="hud-border inline-flex items-center gap-2 px-8 py-3 bg-transparent text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all"
+                className="hud-border inline-flex items-center gap-2 px-8 py-3 bg-transparent text-slate-900 dark:text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all"
               >
                 <Download size={16} className="text-[#00ff66]" />
                 PULL_RESUME.pdf
@@ -78,7 +78,7 @@ export default function About() {
                 href="/assets/JEEVANANTHAN A_RESUME (1).pdf" 
                 target="_blank"
                 rel="noreferrer"
-                className="hud-border inline-flex items-center gap-2 px-8 py-3 bg-transparent text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all"
+                className="hud-border inline-flex items-center gap-2 px-8 py-3 bg-transparent text-slate-900 dark:text-white text-xs font-bold tracking-widest hover:bg-[#00f3ff]/10 transition-all"
               >
                 <Eye size={16} className="text-[#00f3ff]" />
                 READ_STREAM
@@ -89,7 +89,7 @@ export default function About() {
           {/* Education Timeline */}
           <div className="hud-border p-8 relative overflow-hidden">
             <div className="hud-scanline opacity-20"></div>
-            <h3 className="text-2xl font-bold text-white mb-10 tracking-widest flex items-center gap-3 uppercase">
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-10 tracking-widest flex items-center gap-3 uppercase">
               <span className="text-[#00ff66]">{">"}</span> CHRONOLOGY_LOG
             </h3>
 
@@ -104,9 +104,9 @@ export default function About() {
                   <div className="absolute left-[-4.5px] top-2 w-2 h-2 bg-white ring-4 ring-black"></div>
                   <div className="hud-border p-5 group hover:bg-[#00f3ff]/5 transition-all">
                     <span className="text-[10px] font-bold text-[#00ff66] mb-1 block tracking-widest">{item.date}</span>
-                    <h4 className="text-lg font-bold text-white tracking-tight uppercase group-hover:text-[#00f3ff] transition-colors">{item.title}</h4>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight uppercase group-hover:text-[#00f3ff] transition-colors">{item.title}</h4>
                     <p className="text-[#00f3ff]/50 text-[11px] mt-1 uppercase tracking-tight">{item.sub}</p>
-                    <div className="mt-3 inline-block px-3 py-1 bg-black/40 border border-[#00f3ff]/20 text-[#00f3ff] text-[9px] font-bold tracking-widest">
+                    <div className="mt-3 inline-block px-3 py-1 bg-slate-200/40 dark:bg-black/40 border border-[#00f3ff]/20 text-[#00f3ff] text-[9px] font-bold tracking-widest">
                       DATA_VAL: {item.metric}
                     </div>
                   </div>

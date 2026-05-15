@@ -44,7 +44,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4 mb-12">
               <a 
                 href="#projects" 
-                className="group px-8 py-4 rounded-full bg-brand-500 text-white font-medium hover:bg-brand-600 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-1 flex items-center gap-2"
+                className="group px-8 py-4 rounded-full bg-brand-500 text-slate-900 dark:text-white font-medium hover:bg-brand-600 transition-all duration-300 hover:shadow-[0_0_30px_rgba(139,92,246,0.5)] hover:-translate-y-1 flex items-center gap-2"
               >
                 View Projects <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
@@ -57,19 +57,19 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center gap-5">
-              <a href="https://github.com/jeevananthan27" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+              <a href="https://github.com/jeevananthan27" target="_blank" rel="noreferrer" className="text-slate-500 dark:text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <FaGithub size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/jeevananthan-a-420848266/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+              <a href="https://www.linkedin.com/in/jeevananthan-a-420848266/" target="_blank" rel="noreferrer" className="text-slate-500 dark:text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+              <a href="https://www.instagram.com/jeevananthan_27?igsh=MTJxYzV6NW9zbzdzZQ==" target="_blank" rel="noreferrer" className="text-slate-500 dark:text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <FaInstagram size={24} />
               </a>
-              <a href="mailto:jeevakowshick2127@gmail.com" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+              <a href="mailto:jeevakowshick2127@gmail.com" className="text-slate-500 dark:text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <Mail size={24} />
               </a>
-              <a href="tel:+916380303160" className="text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
+              <a href="tel:+916380303160" className="text-slate-500 dark:text-gray-500 hover:text-brand-500 dark:text-gray-400 dark:hover:text-brand-400 transition-colors">
                 <Phone size={24} />
               </a>
             </div>
@@ -91,16 +91,16 @@ export default function Hero() {
             </div>
 
             {/* Code Window - Floating */}
-            <div className="w-full max-w-sm glass rounded-2xl overflow-hidden shadow-2xl transform transition-transform hover:-translate-y-2 duration-500 absolute -bottom-10 -left-10 z-30 hidden md:block border-t border-l border-white/20">
-              <div className="flex items-center px-4 py-3 border-b border-gray-200/20 dark:border-white/10 bg-white/10 dark:bg-black/20">
+            <div className="w-full max-w-sm glass rounded-2xl overflow-hidden shadow-2xl transform transition-transform hover:-translate-y-2 duration-500 absolute -bottom-10 -left-10 z-30 hidden md:block border-t border-l border-slate-900/20 dark:border-white/20">
+              <div className="flex items-center px-4 py-3 border-b border-gray-200/20 dark:border-slate-900/10 dark:border-white/10 bg-white/10 dark:bg-slate-200/20 dark:bg-black/20">
                 <div className="flex space-x-2">
                   <div className="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
                   <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
                   <div className="w-3 h-3 rounded-full bg-[#27c93f]"></div>
                 </div>
-                <div className="mx-auto text-xs text-gray-500 dark:text-gray-400 font-coder tracking-wider">developer.js</div>
+                <div className="mx-auto text-xs text-slate-500 dark:text-slate-600 dark:text-gray-400 font-coder tracking-wider">developer.js</div>
               </div>
-              <div className="p-5 text-xs font-coder text-gray-700 dark:text-gray-300 leading-relaxed overflow-x-auto bg-white/5 dark:bg-black/10">
+              <div className="p-5 text-xs font-coder text-gray-700 dark:text-gray-300 leading-relaxed overflow-x-auto bg-white/5 dark:bg-slate-200/10 dark:bg-black/10">
                 <p><span className="text-brand-600 dark:text-brand-400">const</span> <span className="text-accent">dev</span> = {'{'}</p>
                 <p className="ml-4"><span className="text-gray-900 dark:text-white">name</span>: <span className="text-emerald-600 dark:text-emerald-400">'Jeevananthan A'</span>,</p>
                 <p className="ml-4"><span className="text-gray-900 dark:text-white">role</span>: <span className="text-emerald-600 dark:text-emerald-400">'Program Analyst'</span>,</p>
